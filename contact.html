@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <title>contact</title>
+  </head>
+
+  <body>
+    <div class="contact-body">
+      <div id="contact-form">
+        <h3 class="contact-h3">Contact Us</h3>
+        <form
+          id="contact-us-id"
+          class="contact-form-class"
+          method="post"
+          action="contact-form-process.php"
+        >
+          <div class="contact-form-group">
+            <label for="Name" class="contact-label">Your Name</label>
+            <div class="contact-input-group">
+              <input
+                type="text"
+                id="Name"
+                class="contact-form-control"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="contact-form-group">
+            <label for="Email" class="contact-label">Your Email Address</label>
+            <div class="contact-input-group">
+              <input
+                type="email"
+                id="Email"
+                name="Email"
+                class="contact-form-control"
+                required
+              />
+            </div>
+          </div>
+          <div class="contact-form-group">
+            <label for="Message" class="contact-label">Your Message</label>
+            <div class="contact-input-group">
+              <textarea
+                id="Message"
+                name="Message"
+                class="contact-form-control"
+                rows="6"
+                maxlength="3000"
+                required
+              ></textarea>
+            </div>
+          </div>
+
+          <div class="contact-form-group">
+            <button
+              type="submit"
+              id="contact-button"
+              class="contact-button-primary"
+            >
+              Send Message
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
